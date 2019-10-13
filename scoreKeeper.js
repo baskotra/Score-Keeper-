@@ -15,7 +15,7 @@ p1.addEventListener("click", function(){
 		score1++
 		p1score.textContent = score1
 		if(score1==winningScore){
-			p1score.classList.add('winner')
+			p1score.classList.add('winner') 		//Adding CSS class
 			isGameOver = true
 		}
 	}
@@ -43,7 +43,7 @@ reset.addEventListener("click", function(){
 	score2 = 0
 	p1score.textContent = score1
 	p2score.textContent = score2
-	winningScore = 5
+	winningScore = 5 				//Default Score is 5
 	limit.textContent = winningScore
 	isGameOver = false
 
@@ -54,7 +54,7 @@ numInput.addEventListener("change", function(){
 	winningScore = numInput.value
 	if(numInput.value<0){
 		alert("Dont Decrease the value!")
-		limit.textContent = 5
+		limit.textContent = 5 			//Default
 		winningScore = 5
 	}
 })
